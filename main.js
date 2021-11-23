@@ -37,3 +37,19 @@ console.log ("Witaj" + userName + "!");
 
 
 // Zwiększ nowoutworzoną zmienną o 10, wypisz jej wartość w konsoli.
+// Napisz prostą maszynę losującą, czyli funkcję, która przyjmuje jako argument tablicę zawierającą listę osób. Twoja funkcja powinna 
+// zwracać losową osobę z tej tablicy. Przykładowa tablica do wywołania funkcji: const students = ["John", "Bill", "Emma", "Stella", "Rob"].
+
+const students = ["John", "Bill", "Emma", "Stella", "Rob"];
+const randomStudent = array => {
+    const randomIndex = math.floor (Math.random () * (array.length));
+    return array[randomIndex];
+}
+console.log(`Student: ${randomStudent(students)}`);
+
+// Napisz program, który obliczy pole powierzchni koła dla wybranej przez 
+// użytkownika długości promienia. Wynik podaj w HTML.
+
+let promien = prompt("podaj promien");
+let pole = Math.PI * Math.pow(promien, 2)
+alert("pole: " + pole);
